@@ -1,0 +1,21 @@
+{
+  "name": "testing-select",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
+  "scripts": {
+    "rewriteStencil": "node node_modules/stencil-plugin-tss/dist/rewriteStencil.js",
+    "build": "npm run rewriteStencil && stencil build",
+    "start": "npm run rewriteStencil && stencil build --dev --watch --serve",
+    "test": "npm run rewriteStencil && stencil test --spec --e2e",
+    "test.watch": "npm run rewriteStencil && stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {
+    "@stencil/core": "^1.0.7",
+    "@stencil/router": "^1.0.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "stencil-plugin-tss": "^1.0.0"
+  }
+}
